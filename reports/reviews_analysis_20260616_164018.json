@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "engine": "AI-Powered Data Integration Engine v1.0",
+    "exported_at": "2026-06-16T16:40:18.527504+00:00",
+    "total_records": 9,
+    "report_id": "9cf11d5a-888"
+  },
+  "summary": {
+    "report_id": "9cf11d5a-888",
+    "generated_at": "2026-06-16T16:40:18.509505",
+    "total_reviews_analyzed": 9,
+    "high_quality_reviews": 0,
+    "spam_excluded": 1,
+    "sentiment_distribution": {
+      "sentimentlabel.neutral": 9
+    },
+    "average_sentiment_score": 0.0256,
+    "average_rating": 3.22,
+    "average_confidence": 0.9067,
+    "category_distribution": {
+      "productcategory.beauty": 4,
+      "productcategory.unknown": 2,
+      "productcategory.clothing": 2,
+      "productcategory.sports": 1
+    },
+    "action_required_count": 0,
+    "critical_urgency_count": 0,
+    "high_urgency_count": 0,
+    "top_topics": [
+      {
+        "topic": "performance",
+        "count": 6,
+        "avg_sentiment": 0.007
+      },
+      {
+        "topic": "ease of use",
+        "count": 5,
+        "avg_sentiment": 0.034
+      },
+      {
+        "topic": "battery life",
+        "count": 5,
+        "avg_sentiment": 0.032
+      },
+      {
+        "topic": "compatibility",
+        "count": 3,
+        "avg_sentiment": 0.05
+      },
+      {
+        "topic": "build quality",
+        "count": 3,
+        "avg_sentiment": -0.01
+      },
+      {
+        "topic": "setup process",
+        "count": 3,
+        "avg_sentiment": 0.033
+      },
+      {
+        "topic": "shipping speed",
+        "count": 3,
+        "avg_sentiment": 0.01
+      },
+      {
+        "topic": "durability",
+        "count": 2,
+        "avg_sentiment": 0.08
+      },
+      {
+        "topic": "design aesthetics",
+        "count": 2,
+        "avg_sentiment": -0.03
+      },
+      {
+        "topic": "customer service",
+        "count": 2,
+        "avg_sentiment": -0.01
+      }
+    ],
+    "competitor_mentions": {
+      "AlternativePro": 1,
+      "BrandX": 1
+    },
+    "data_quality_distribution": {
+      "DataQuality.HIGH": 7,
+      "DataQuality.MEDIUM": 2
+    },
+    "language_distribution": {
+      "en": 9
+    }
+  },
+  "records": [
+    {
+      "source_id": "1",
+      "product_name": "Smart Home Security Camera",
+      "product_category": "productcategory.unknown",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.11,
+      "confidence_score": 0.93,
+      "reviewer_rating": 3.8,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Smart Home Security Camera. Rating: 3.8/5. No urgent action required.",
+      "key_topics_str": "battery life|ease of use|durability|performance|setup process",
+      "pros_str": "Exactly as described in listing|Excellent build quality|Easy to set up and use",
+      "cons_str": "Missing some advertised features",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.389390"
+    },
+    {
+      "source_id": "6",
+      "product_name": "Ultra HD 4K Monitor 27-inch",
+      "product_category": "productcategory.sports",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": -0.06,
+      "confidence_score": 0.97,
+      "reviewer_rating": 2.9,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Ultra HD 4K Monitor 27-inch. Rating: 2.9/5. No urgent action required.",
+      "key_topics_str": "compatibility|setup process|build quality|performance|battery life",
+      "pros_str": "Great value for money",
+      "cons_str": "Minor quality control issues",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.MEDIUM",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.389687"
+    },
+    {
+      "source_id": "7",
+      "product_name": "Ultra HD 4K Monitor 27-inch",
+      "product_category": "productcategory.clothing",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": -0.07,
+      "confidence_score": 0.86,
+      "reviewer_rating": 3.0,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Ultra HD 4K Monitor 27-inch. Rating: 3.0/5. No urgent action required.",
+      "key_topics_str": "ease of use|design aesthetics|performance|shipping speed",
+      "pros_str": "Battery life exceeds expectations|Exactly as described in listing",
+      "cons_str": "Instructions could be clearer",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [
+        "AlternativePro"
+      ],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.389812"
+    },
+    {
+      "source_id": "11",
+      "product_name": "Running Shoes AeroFlex X3",
+      "product_category": "productcategory.beauty",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.05,
+      "confidence_score": 0.94,
+      "reviewer_rating": 3.2,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Running Shoes AeroFlex X3. Rating: 3.2/5. No urgent action required.",
+      "key_topics_str": "durability|setup process|value for money|build quality|performance",
+      "pros_str": "Battery life exceeds expectations",
+      "cons_str": "Missing some advertised features|Slightly smaller than expected",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.389935"
+    },
+    {
+      "source_id": "12",
+      "product_name": "Stainless Steel Water Bottle 32oz",
+      "product_category": "productcategory.beauty",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.0,
+      "confidence_score": 0.93,
+      "reviewer_rating": 2.9,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Stainless Steel Water Bottle 32oz. Rating: 2.9/5. No urgent action required.",
+      "key_topics_str": "value for money|performance|customer service|ease of use",
+      "pros_str": "Exactly as described in listing|Great value for money|Customer support was very responsive",
+      "cons_str": "",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.MEDIUM",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.392576"
+    },
+    {
+      "source_id": "16",
+      "product_name": "Python Programming: Advanced Patterns",
+      "product_category": "productcategory.beauty",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": -0.02,
+      "confidence_score": 0.94,
+      "reviewer_rating": 3.3,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Python Programming: Advanced Patterns. Rating: 3.3/5. No urgent action required.",
+      "key_topics_str": "battery life|customer service|build quality",
+      "pros_str": "Exactly as described in listing",
+      "cons_str": "Missing some advertised features",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.392720"
+    },
+    {
+      "source_id": "17",
+      "product_name": "Stainless Steel Water Bottle 32oz",
+      "product_category": "productcategory.beauty",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.12,
+      "confidence_score": 0.77,
+      "reviewer_rating": 3.9,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Stainless Steel Water Bottle 32oz. Rating: 3.9/5. No urgent action required.",
+      "key_topics_str": "ease of use|compatibility|battery life",
+      "pros_str": "Great value for money|Easy to set up and use|Customer support was very responsive",
+      "cons_str": "Packaging was damaged on arrival|Slightly smaller than expected",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.392851"
+    },
+    {
+      "source_id": "21",
+      "product_name": "Ergonomic Office Chair Deluxe",
+      "product_category": "productcategory.clothing",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.09,
+      "confidence_score": 0.84,
+      "reviewer_rating": 3.3,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Ergonomic Office Chair Deluxe. Rating: 3.3/5. No urgent action required.",
+      "key_topics_str": "shipping speed|compatibility",
+      "pros_str": "Fast shipping and well packaged",
+      "cons_str": "Slightly smaller than expected|Minor quality control issues",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.392973"
+    },
+    {
+      "source_id": "22",
+      "product_name": "Mechanical Keyboard TKL RGB",
+      "product_category": "productcategory.unknown",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.01,
+      "confidence_score": 0.98,
+      "reviewer_rating": 2.7,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Mechanical Keyboard TKL RGB. Rating: 2.7/5. No urgent action required.",
+      "key_topics_str": "design aesthetics|shipping speed|performance|battery life|ease of use",
+      "pros_str": "Easy to set up and use|Fast shipping and well packaged|Great value for money",
+      "cons_str": "Price is a bit high",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [
+        "BrandX"
+      ],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:40:18.393109"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# ============================================================
+# AI-Powered Data Integration Engine - Requirements
+# ============================================================
+# Python >= 3.11 gereklidir
+# Kurulum: pip install -r requirements.txt
+#
+# NOT: Python 3.14 kullanıyorsanız bazı paketlerin en son
+#      pre-release wheel'lerini pip otomatik indirir.
+# ============================================================
+
+# --- Web Scraping & HTTP ---
+requests>=2.31.0
+urllib3>=2.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+httpx>=0.27.0           # Async HTTP client (scraper enterprise upgrade)
+
+# --- Data Validation & Schema ---
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# --- AI / LLM Integration (opsiyonel - mock modda gerekmez) ---
+openai>=1.30.0
+anthropic>=0.25.0
+tiktoken>=0.7.0         # Token sayma (ai_processor enterprise upgrade)
+
+# --- Data Science & Analytics ---
+pandas>=2.1.0
+numpy>=1.26.0
+
+# --- Reporting & Export ---
+openpyxl>=3.1.0
+
+# --- Environment & Config ---
+python-dotenv>=1.0.0
+
+# --- Testing ---
+pytest>=8.0.0           # Test framework
+pytest-asyncio>=0.23.0  # Async test desteği

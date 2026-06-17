@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "engine": "AI-Powered Data Integration Engine v1.0",
+    "exported_at": "2026-06-16T16:41:02.137101+00:00",
+    "total_records": 9,
+    "report_id": "ac68d9cc-25e"
+  },
+  "summary": {
+    "report_id": "ac68d9cc-25e",
+    "generated_at": "2026-06-16T16:41:02.120859",
+    "total_reviews_analyzed": 9,
+    "high_quality_reviews": 0,
+    "spam_excluded": 1,
+    "sentiment_distribution": {
+      "sentimentlabel.neutral": 9
+    },
+    "average_sentiment_score": 0.0867,
+    "average_rating": 3.49,
+    "average_confidence": 0.8256,
+    "category_distribution": {
+      "productcategory.home_garden": 2,
+      "productcategory.sports": 2,
+      "productcategory.beauty": 1,
+      "productcategory.clothing": 1,
+      "productcategory.unknown": 1,
+      "productcategory.electronics": 1,
+      "productcategory.books": 1
+    },
+    "action_required_count": 0,
+    "critical_urgency_count": 0,
+    "high_urgency_count": 0,
+    "top_topics": [
+      {
+        "topic": "shipping speed",
+        "count": 5,
+        "avg_sentiment": 0.084
+      },
+      {
+        "topic": "durability",
+        "count": 5,
+        "avg_sentiment": 0.082
+      },
+      {
+        "topic": "compatibility",
+        "count": 4,
+        "avg_sentiment": 0.038
+      },
+      {
+        "topic": "value for money",
+        "count": 3,
+        "avg_sentiment": 0.167
+      },
+      {
+        "topic": "ease of use",
+        "count": 2,
+        "avg_sentiment": 0.08
+      },
+      {
+        "topic": "customer service",
+        "count": 2,
+        "avg_sentiment": 0.07
+      },
+      {
+        "topic": "setup process",
+        "count": 2,
+        "avg_sentiment": -0.02
+      },
+      {
+        "topic": "performance",
+        "count": 2,
+        "avg_sentiment": 0.085
+      },
+      {
+        "topic": "build quality",
+        "count": 1,
+        "avg_sentiment": 0.02
+      },
+      {
+        "topic": "battery life",
+        "count": 1,
+        "avg_sentiment": 0.19
+      }
+    ],
+    "competitor_mentions": {
+      "AlternativePro": 2
+    },
+    "data_quality_distribution": {
+      "DataQuality.HIGH": 8,
+      "DataQuality.MEDIUM": 1
+    },
+    "language_distribution": {
+      "en": 9
+    }
+  },
+  "records": [
+    {
+      "source_id": "1",
+      "product_name": "Smart Home Security Camera",
+      "product_category": "productcategory.beauty",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.26,
+      "confidence_score": 0.72,
+      "reviewer_rating": 3.3,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Smart Home Security Camera. Rating: 3.3/5. No urgent action required.",
+      "key_topics_str": "value for money|compatibility|durability",
+      "pros_str": "Durable materials, feels premium|Fast shipping and well packaged",
+      "cons_str": "Instructions could be clearer|Minor quality control issues",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.MEDIUM",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.005521"
+    },
+    {
+      "source_id": "2",
+      "product_name": "Stainless Steel Water Bottle 32oz",
+      "product_category": "productcategory.clothing",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": -0.09,
+      "confidence_score": 0.86,
+      "reviewer_rating": 3.9,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Stainless Steel Water Bottle 32oz. Rating: 3.9/5. No urgent action required.",
+      "key_topics_str": "shipping speed|compatibility|durability",
+      "pros_str": "Battery life exceeds expectations|Customer support was very responsive|Excellent build quality",
+      "cons_str": "Price is a bit high|Instructions could be clearer",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.005691"
+    },
+    {
+      "source_id": "6",
+      "product_name": "Ergonomic Office Chair Deluxe",
+      "product_category": "productcategory.home_garden",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.02,
+      "confidence_score": 0.77,
+      "reviewer_rating": 3.2,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Ergonomic Office Chair Deluxe. Rating: 3.2/5. No urgent action required.",
+      "key_topics_str": "shipping speed|build quality|customer service",
+      "pros_str": "Battery life exceeds expectations|Great value for money",
+      "cons_str": "Instructions could be clearer|Packaging was damaged on arrival",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [
+        "AlternativePro"
+      ],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.005824"
+    },
+    {
+      "source_id": "11",
+      "product_name": "Smart Home Security Camera",
+      "product_category": "productcategory.sports",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.25,
+      "confidence_score": 0.82,
+      "reviewer_rating": 4.0,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Smart Home Security Camera. Rating: 4.0/5. No urgent action required.",
+      "key_topics_str": "ease of use|shipping speed",
+      "pros_str": "Easy to set up and use|Battery life exceeds expectations",
+      "cons_str": "",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.006066"
+    },
+    {
+      "source_id": "12",
+      "product_name": "Portable Solar Power Bank 20000mAh",
+      "product_category": "productcategory.unknown",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.05,
+      "confidence_score": 0.76,
+      "reviewer_rating": 4.0,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Portable Solar Power Bank 20000mAh. Rating: 4.0/5. No urgent action required.",
+      "key_topics_str": "performance|setup process|durability|shipping speed|value for money",
+      "pros_str": "Fast shipping and well packaged|Durable materials, feels premium|Battery life exceeds expectations",
+      "cons_str": "Packaging was damaged on arrival",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.011410"
+    },
+    {
+      "source_id": "16",
+      "product_name": "Smart Home Security Camera",
+      "product_category": "productcategory.electronics",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.07,
+      "confidence_score": 0.94,
+      "reviewer_rating": 3.1,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Smart Home Security Camera. Rating: 3.1/5. No urgent action required.",
+      "key_topics_str": "compatibility|durability",
+      "pros_str": "Excellent build quality|Durable materials, feels premium",
+      "cons_str": "",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.011666"
+    },
+    {
+      "source_id": "17",
+      "product_name": "Mechanical Keyboard TKL RGB",
+      "product_category": "productcategory.sports",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.19,
+      "confidence_score": 0.71,
+      "reviewer_rating": 3.9,
+      "urgency_level": "urgencylevel.low",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Mechanical Keyboard TKL RGB. Rating: 3.9/5. No urgent action required.",
+      "key_topics_str": "value for money|shipping speed|battery life",
+      "pros_str": "Excellent build quality",
+      "cons_str": "Missing some advertised features",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "intermediate",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.011955"
+    },
+    {
+      "source_id": "21",
+      "product_name": "Wireless Bluetooth Headphones Pro",
+      "product_category": "productcategory.home_garden",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": -0.09,
+      "confidence_score": 0.88,
+      "reviewer_rating": 2.8,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Wireless Bluetooth Headphones Pro. Rating: 2.8/5. No urgent action required.",
+      "key_topics_str": "setup process|ease of use|compatibility",
+      "pros_str": "Great value for money|Battery life exceeds expectations|Easy to set up and use",
+      "cons_str": "Price is a bit high",
+      "is_verified_purchase": false,
+      "reviewer_expertise": "novice",
+      "mentioned_competitors": [],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.012185"
+    },
+    {
+      "source_id": "22",
+      "product_name": "Python Programming: Advanced Patterns",
+      "product_category": "productcategory.books",
+      "sentiment": "sentimentlabel.neutral",
+      "sentiment_score": 0.12,
+      "confidence_score": 0.97,
+      "reviewer_rating": 3.2,
+      "urgency_level": "urgencylevel.medium",
+      "action_required": false,
+      "action_notes": "",
+      "summary": "Customer expresses neutral sentiment about Python Programming: Advanced Patterns. Rating: 3.2/5. No urgent action required.",
+      "key_topics_str": "customer service|performance|durability",
+      "pros_str": "Excellent build quality",
+      "cons_str": "Instructions could be clearer",
+      "is_verified_purchase": true,
+      "reviewer_expertise": "expert",
+      "mentioned_competitors": [
+        "AlternativePro"
+      ],
+      "language_detected": "en",
+      "data_quality": "DataQuality.HIGH",
+      "is_spam_or_fake": false,
+      "analyzed_at": "2026-06-16T16:41:02.012398"
+    }
+  ]
+}

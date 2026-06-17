@@ -1,0 +1,267 @@
+2026-06-16 19:38:19 | __main__             | INFO     | CLI override: AI provider → mock
+2026-06-16 19:38:19 | __main__             | INFO     | CLI override: data source → mock_api
+2026-06-16 19:38:19 | __main__             | INFO     | CLI override: max records → 10
+2026-06-16 19:38:19 | config               | WARNING  | AI sağlayıcı 'mock' modunda çalışıyor. Gerçek analiz için OPENAI_API_KEY veya ANTHROPIC_API_KEY tanımlayın.
+2026-06-16 19:38:19 | config               | INFO     | AI-Powered Data Integration Engine v1.0.0 yapılandırması doğrulandı. AI Provider: MOCK
+2026-06-16 19:38:19 | __main__             | INFO     | ============================================================
+2026-06-16 19:38:19 | __main__             | INFO     |   AI-Powered Data Integration Engine v1.0.0
+2026-06-16 19:38:19 | __main__             | INFO     |   AI Provider : MOCK
+2026-06-16 19:38:19 | __main__             | INFO     |   Data Source : mock_api
+2026-06-16 19:38:19 | __main__             | INFO     |   Max Records : 10
+2026-06-16 19:38:19 | __main__             | INFO     | ============================================================
+2026-06-16 19:38:19 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 1/4: Web Veri Kazıma Başlıyor...
+2026-06-16 19:38:19 | scraper              | INFO     | DataScraper başlatıldı. Kaynak tipi: mock_api, Hedef kayıt: 10
+2026-06-16 19:38:19 | scraper              | INFO     | ━━━ Veri Çekme Başlıyor ━━━ Kaynak: mock_api | Hedef: 10 kayıt
+2026-06-16 19:38:19 | scraper              | INFO     | API'den veri çekiliyor: limit=10
+2026-06-16 19:38:20 | scraper              | INFO     | ✓ 10 post çekildi
+2026-06-16 19:38:27 | scraper              | INFO     | ✓ Toplam 10 ham kayıt toplandı (API)
+2026-06-16 19:38:27 | scraper              | INFO     | ━━━ Veri Çekme Tamamlandı ━━━ Ham: 10 | Normalize: 10 | Atılan: 0 | Süre: 8.50s | İstek sayısı: 6
+2026-06-16 19:38:27 | DataPipelineOrchestrator | INFO     | ✓ Katman 1 tamamlandı: 10 ham kayıt kazındı.
+2026-06-16 19:38:27 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 2/4: AI Analizi Başlıyor... (10 kayıt | provider=MOCK)
+2026-06-16 19:38:27 | ai_processor         | INFO     | AI Provider seçildi: MOCK
+2026-06-16 19:38:27 | DataPipelineOrchestrator | ERROR    | ✗ Katman 2 beklenmeyen hata: MockAIProvider() takes no arguments
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\ai_data_engine\main.py", line 164, in _step_ai_process
+    processor = AIProcessor(config=self._config.ai)
+  File "C:\Users\User\Desktop\ai_data_engine\ai_processor.py", line 602, in __init__
+    self._provider = create_ai_provider(config)
+                     ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\User\Desktop\ai_data_engine\ai_processor.py", line 580, in create_ai_provider
+    return provider_class(config)
+TypeError: MockAIProvider() takes no arguments
+
+2026-06-16 19:38:27 | __main__             | ERROR    | Pipeline hatası: AI processor beklenmeyen hata: MockAIProvider() takes no arguments
+2026-06-16 19:40:12 | __main__             | INFO     | CLI override: AI provider → mock
+2026-06-16 19:40:12 | __main__             | INFO     | CLI override: data source → mock_api
+2026-06-16 19:40:12 | __main__             | INFO     | CLI override: max records → 10
+2026-06-16 19:40:12 | config               | WARNING  | AI sağlayıcı 'mock' modunda çalışıyor. Gerçek analiz için OPENAI_API_KEY veya ANTHROPIC_API_KEY tanımlayın.
+2026-06-16 19:40:12 | config               | INFO     | AI-Powered Data Integration Engine v1.0.0 yapılandırması doğrulandı. AI Provider: MOCK
+2026-06-16 19:40:12 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:12 | __main__             | INFO     |   AI-Powered Data Integration Engine v1.0.0
+2026-06-16 19:40:12 | __main__             | INFO     |   AI Provider : MOCK
+2026-06-16 19:40:12 | __main__             | INFO     |   Data Source : mock_api
+2026-06-16 19:40:12 | __main__             | INFO     |   Max Records : 10
+2026-06-16 19:40:12 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:12 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 1/4: Web Veri Kazıma Başlıyor...
+2026-06-16 19:40:12 | scraper              | INFO     | DataScraper başlatıldı. Kaynak tipi: mock_api, Hedef kayıt: 10
+2026-06-16 19:40:12 | scraper              | INFO     | ━━━ Veri Çekme Başlıyor ━━━ Kaynak: mock_api | Hedef: 10 kayıt
+2026-06-16 19:40:12 | scraper              | INFO     | API'den veri çekiliyor: limit=10
+2026-06-16 19:40:13 | scraper              | INFO     | ✓ 10 post çekildi
+2026-06-16 19:40:18 | scraper              | INFO     | ✓ Toplam 10 ham kayıt toplandı (API)
+2026-06-16 19:40:18 | scraper              | INFO     | ━━━ Veri Çekme Tamamlandı ━━━ Ham: 10 | Normalize: 10 | Atılan: 0 | Süre: 5.54s | İstek sayısı: 6
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ✓ Katman 1 tamamlandı: 10 ham kayıt kazındı.
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 2/4: AI Analizi Başlıyor... (10 kayıt | provider=MOCK)
+2026-06-16 19:40:18 | ai_processor         | INFO     | AI Provider seçildi: MOCK
+2026-06-16 19:40:18 | ai_processor         | INFO     | Mock AI provider başlatıldı (demo/test modu).
+2026-06-16 19:40:18 | ai_processor         | INFO     | AIProcessor hazır: provider=mock, model=mock-v1.0-deterministic, batch_size=5
+2026-06-16 19:40:18 | ai_processor         | INFO     | ━━━ AI İşleme Başlıyor ━━━ batch_id=65f6ca95 | toplam=10 kayıt | batch_size=5 | provider=MOCK
+2026-06-16 19:40:18 | ai_processor         | INFO     | Batch 1/2 işleniyor (5 kayıt)...
+2026-06-16 19:40:18 | ai_processor         | INFO     | Batch 1 tamamlandı: ✓ 5 başarılı, ✗ 0 başarısız
+2026-06-16 19:40:18 | ai_processor         | INFO     | Batch 2/2 işleniyor (5 kayıt)...
+2026-06-16 19:40:18 | ai_processor         | INFO     | Batch 2 tamamlandı: ✓ 5 başarılı, ✗ 0 başarısız
+2026-06-16 19:40:18 | ai_processor         | INFO     | ━━━ AI İşleme Tamamlandı ━━━ batch_id=65f6ca95 | başarı_oranı=100.0% | başarılı=10 | başarısız=0 | süre=0.00s
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ✓ Katman 2 tamamlandı: 10/10 kayıt analiz edildi (başarı oranı: 100.0%)
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 3/4: Veri Analitiği Başlıyor... (10 kayıt)
+2026-06-16 19:40:18 | analytics            | INFO     | DataAnalytics katmanı başlatıldı.
+2026-06-16 19:40:18 | analytics            | INFO     | ━━━ Analitik Pipeline Başlıyor ━━━ Giriş: 10 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     | DataFrame oluşturuluyor: 10 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     | Ham DataFrame oluşturuldu: 10 satır × 26 sütun
+2026-06-16 19:40:18 | analytics            | INFO     | Veri temizleme başlıyor: 10 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     |   ✂ Spam/sahte kayıt kaldırıldı: 1
+2026-06-16 19:40:18 | analytics            | INFO     | Veri temizleme tamamlandı: 9 kayıt kaldı (1 kayıt kaldırıldı, oran=10.0%)
+2026-06-16 19:40:18 | analytics            | INFO     | KPI özeti hesaplanıyor: report_id=9cf11d5a-888, kayıt=9
+2026-06-16 19:40:18 | analytics            | INFO     | KPI özeti tamamlandı: toplam=9 | avg_sentiment=0.026 | avg_rating=3.22 | aksiyon_gereken=0 | high_urgency=0
+2026-06-16 19:40:18 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:40:18 | analytics            | INFO     |   📊 AI DATA ENGINE - KPI RAPORU
+2026-06-16 19:40:18 | analytics            | INFO     |   Rapor ID : 9cf11d5a-888
+2026-06-16 19:40:18 | analytics            | INFO     |   Tarih    : 2026-06-16 16:40:18 UTC
+2026-06-16 19:40:18 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:40:18 | analytics            | INFO     |   📌 GENEL İSTATİSTİKLER
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   Toplam analiz edilen yorum : 9
+2026-06-16 19:40:18 | analytics            | INFO     |   Yüksek kaliteli kayıt      : 0
+2026-06-16 19:40:18 | analytics            | INFO     |   Spam / sahte filtreler     : 1
+2026-06-16 19:40:18 | analytics            | INFO     |   Ortalama AI güven skoru    : 90.7%
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   💬 DUYGU ANALİZİ
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   sentimentlabel.neutral ████████████████████    9 (100.0%)
+2026-06-16 19:40:18 | analytics            | INFO     |   Ortalama sentiment skoru   : +0.026
+2026-06-16 19:40:18 | analytics            | INFO     |   Ortalama müşteri puanı     : 3.22 / 5.0
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   📦 KATEGORİ DAĞILIMI
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   productcategory.beauty    4 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     |   productcategory.unknown    2 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     |   productcategory.clothing    2 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     |   productcategory.sports    1 kayıt
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   🚨 AKSİYON GEREKTİREN KAYITLAR
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   Aksiyon gereken toplam     : 0
+2026-06-16 19:40:18 | analytics            | INFO     |   CRITICAL öncelikli         : 0
+2026-06-16 19:40:18 | analytics            | INFO     |   HIGH öncelikli             : 0
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   🔑 EN ÇOK KONUŞULAN KONULAR (Top 10)
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   performance               bahsedilme:   6 | sentiment: ▲0.01
+2026-06-16 19:40:18 | analytics            | INFO     |   ease of use               bahsedilme:   5 | sentiment: ▲0.03
+2026-06-16 19:40:18 | analytics            | INFO     |   battery life              bahsedilme:   5 | sentiment: ▲0.03
+2026-06-16 19:40:18 | analytics            | INFO     |   compatibility             bahsedilme:   3 | sentiment: ▲0.05
+2026-06-16 19:40:18 | analytics            | INFO     |   build quality             bahsedilme:   3 | sentiment: ▼0.01
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   🏁 RAKİP MARKA GEÇMELERİ
+2026-06-16 19:40:18 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:40:18 | analytics            | INFO     |   AlternativePro              1 yorum
+2026-06-16 19:40:18 | analytics            | INFO     |   BrandX                      1 yorum
+2026-06-16 19:40:18 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:40:18 | analytics            | INFO     | ━━━ Analitik Pipeline Tamamlandı ━━━ Temiz kayıt: 9 | KPI: sentiment=+0.026
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ✓ Katman 3 tamamlandı: 9 temiz kayıt | avg_sentiment=+0.026
+2026-06-16 19:40:18 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 4/4: Raporlama Başlıyor... (formatlar=['json', 'csv', 'xlsx'])
+2026-06-16 19:40:18 | reporter             | INFO     | DataReporter başlatıldı: çıktı dizini=C:\Users\User\Desktop\ai_data_engine\reports | formatlar=['json', 'csv', 'xlsx']
+2026-06-16 19:40:18 | reporter             | INFO     | ━━━ Export Başlıyor ━━━ formatlar=['json', 'csv', 'xlsx'] | kayıt=9
+2026-06-16 19:40:18 | reporter             | INFO     | JSON export başlıyor: reports\reviews_analysis_20260616_164018.json
+2026-06-16 19:40:18 | reporter             | INFO     | ✓ JSON export tamamlandı: reviews_analysis_20260616_164018.json (11.3 KB, 9 kayıt)
+2026-06-16 19:40:18 | reporter             | INFO     | CSV export başlıyor: reports\reviews_analysis_20260616_164018.csv
+2026-06-16 19:40:18 | reporter             | INFO     | ✓ CSV export tamamlandı: reviews_analysis_20260616_164018.csv (4.4 KB, 9 satır)
+2026-06-16 19:40:18 | reporter             | INFO     | Excel export başlıyor: reports\reviews_analysis_20260616_164018.xlsx
+2026-06-16 19:40:18 | reporter             | ERROR    | ✗ Excel export başarısız: Cannot convert [] to Excel
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\ai_data_engine\reporter.py", line 350, in export_excel
+    ws_detail.append(row)
+    ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\openpyxl\worksheet\worksheet.py", line 673, in append
+    cell = Cell(self, row=row_idx, column=col_idx, value=content)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\openpyxl\cell\cell.py", line 119, in __init__
+    self.value = value
+    ^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\openpyxl\cell\cell.py", line 218, in value
+    self._bind_value(value)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\openpyxl\cell\cell.py", line 187, in _bind_value
+    raise ValueError("Cannot convert {0!r} to Excel".format(value))
+ValueError: Cannot convert [] to Excel
+2026-06-16 19:40:19 | reporter             | INFO     | ━━━ Export Tamamlandı ━━━ başarılı=['json', 'csv'] | başarısız=['xlsx']
+2026-06-16 19:40:19 | reporter             | INFO     | 📁 Üretilen dosyalar:
+2026-06-16 19:40:19 | reporter             | INFO     |    JSON  → reports\reviews_analysis_20260616_164018.json  (11.3 KB)
+2026-06-16 19:40:19 | reporter             | INFO     |    CSV   → reports\reviews_analysis_20260616_164018.csv  (4.4 KB)
+2026-06-16 19:40:19 | DataPipelineOrchestrator | INFO     | ✓ Katman 4 tamamlandı: 2 dosya üretildi.
+2026-06-16 19:40:19 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:19 | __main__             | INFO     |   ✅ PIPELINE BAŞARIYLA TAMAMLANDI
+2026-06-16 19:40:19 | __main__             | INFO     |   Toplam süre     : 6.18s
+2026-06-16 19:40:19 | __main__             | INFO     |   Kazınan kayıt   : 10
+2026-06-16 19:40:19 | __main__             | INFO     |   Analiz edilen   : 10
+2026-06-16 19:40:19 | __main__             | INFO     |   Başarı oranı    : 100.0%
+2026-06-16 19:40:19 | __main__             | INFO     |   Üretilen dosya  : 2
+2026-06-16 19:40:19 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:56 | __main__             | INFO     | CLI override: AI provider → mock
+2026-06-16 19:40:56 | __main__             | INFO     | CLI override: data source → mock_api
+2026-06-16 19:40:56 | __main__             | INFO     | CLI override: max records → 10
+2026-06-16 19:40:56 | config               | WARNING  | AI sağlayıcı 'mock' modunda çalışıyor. Gerçek analiz için OPENAI_API_KEY veya ANTHROPIC_API_KEY tanımlayın.
+2026-06-16 19:40:56 | config               | INFO     | AI-Powered Data Integration Engine v1.0.0 yapılandırması doğrulandı. AI Provider: MOCK
+2026-06-16 19:40:56 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:56 | __main__             | INFO     |   AI-Powered Data Integration Engine v1.0.0
+2026-06-16 19:40:56 | __main__             | INFO     |   AI Provider : MOCK
+2026-06-16 19:40:56 | __main__             | INFO     |   Data Source : mock_api
+2026-06-16 19:40:56 | __main__             | INFO     |   Max Records : 10
+2026-06-16 19:40:56 | __main__             | INFO     | ============================================================
+2026-06-16 19:40:56 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 1/4: Web Veri Kazıma Başlıyor...
+2026-06-16 19:40:56 | scraper              | INFO     | DataScraper başlatıldı. Kaynak tipi: mock_api, Hedef kayıt: 10
+2026-06-16 19:40:56 | scraper              | INFO     | ━━━ Veri Çekme Başlıyor ━━━ Kaynak: mock_api | Hedef: 10 kayıt
+2026-06-16 19:40:56 | scraper              | INFO     | API'den veri çekiliyor: limit=10
+2026-06-16 19:40:56 | scraper              | INFO     | ✓ 10 post çekildi
+2026-06-16 19:41:01 | scraper              | INFO     | ✓ Toplam 10 ham kayıt toplandı (API)
+2026-06-16 19:41:01 | scraper              | INFO     | ━━━ Veri Çekme Tamamlandı ━━━ Ham: 10 | Normalize: 10 | Atılan: 0 | Süre: 5.54s | İstek sayısı: 6
+2026-06-16 19:41:01 | DataPipelineOrchestrator | INFO     | ✓ Katman 1 tamamlandı: 10 ham kayıt kazındı.
+2026-06-16 19:41:01 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 2/4: AI Analizi Başlıyor... (10 kayıt | provider=MOCK)
+2026-06-16 19:41:01 | ai_processor         | INFO     | AI Provider seçildi: MOCK
+2026-06-16 19:41:01 | ai_processor         | INFO     | Mock AI provider başlatıldı (demo/test modu).
+2026-06-16 19:41:02 | ai_processor         | INFO     | AIProcessor hazır: provider=mock, model=mock-v1.0-deterministic, batch_size=5
+2026-06-16 19:41:02 | ai_processor         | INFO     | ━━━ AI İşleme Başlıyor ━━━ batch_id=91fd188d | toplam=10 kayıt | batch_size=5 | provider=MOCK
+2026-06-16 19:41:02 | ai_processor         | INFO     | Batch 1/2 işleniyor (5 kayıt)...
+2026-06-16 19:41:02 | ai_processor         | INFO     | Batch 1 tamamlandı: ✓ 5 başarılı, ✗ 0 başarısız
+2026-06-16 19:41:02 | ai_processor         | INFO     | Batch 2/2 işleniyor (5 kayıt)...
+2026-06-16 19:41:02 | ai_processor         | INFO     | Batch 2 tamamlandı: ✓ 5 başarılı, ✗ 0 başarısız
+2026-06-16 19:41:02 | ai_processor         | INFO     | ━━━ AI İşleme Tamamlandı ━━━ batch_id=91fd188d | başarı_oranı=100.0% | başarılı=10 | başarısız=0 | süre=0.01s
+2026-06-16 19:41:02 | DataPipelineOrchestrator | INFO     | ✓ Katman 2 tamamlandı: 10/10 kayıt analiz edildi (başarı oranı: 100.0%)
+2026-06-16 19:41:02 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 3/4: Veri Analitiği Başlıyor... (10 kayıt)
+2026-06-16 19:41:02 | analytics            | INFO     | DataAnalytics katmanı başlatıldı.
+2026-06-16 19:41:02 | analytics            | INFO     | ━━━ Analitik Pipeline Başlıyor ━━━ Giriş: 10 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     | DataFrame oluşturuluyor: 10 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     | Ham DataFrame oluşturuldu: 10 satır × 26 sütun
+2026-06-16 19:41:02 | analytics            | INFO     | Veri temizleme başlıyor: 10 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   ✂ Spam/sahte kayıt kaldırıldı: 1
+2026-06-16 19:41:02 | analytics            | INFO     | Veri temizleme tamamlandı: 9 kayıt kaldı (1 kayıt kaldırıldı, oran=10.0%)
+2026-06-16 19:41:02 | analytics            | INFO     | KPI özeti hesaplanıyor: report_id=ac68d9cc-25e, kayıt=9
+2026-06-16 19:41:02 | analytics            | INFO     | KPI özeti tamamlandı: toplam=9 | avg_sentiment=0.087 | avg_rating=3.49 | aksiyon_gereken=0 | high_urgency=0
+2026-06-16 19:41:02 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:41:02 | analytics            | INFO     |   📊 AI DATA ENGINE - KPI RAPORU
+2026-06-16 19:41:02 | analytics            | INFO     |   Rapor ID : ac68d9cc-25e
+2026-06-16 19:41:02 | analytics            | INFO     |   Tarih    : 2026-06-16 16:41:02 UTC
+2026-06-16 19:41:02 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:41:02 | analytics            | INFO     |   📌 GENEL İSTATİSTİKLER
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   Toplam analiz edilen yorum : 9
+2026-06-16 19:41:02 | analytics            | INFO     |   Yüksek kaliteli kayıt      : 0
+2026-06-16 19:41:02 | analytics            | INFO     |   Spam / sahte filtreler     : 1
+2026-06-16 19:41:02 | analytics            | INFO     |   Ortalama AI güven skoru    : 82.6%
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   💬 DUYGU ANALİZİ
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   sentimentlabel.neutral ████████████████████    9 (100.0%)
+2026-06-16 19:41:02 | analytics            | INFO     |   Ortalama sentiment skoru   : +0.087
+2026-06-16 19:41:02 | analytics            | INFO     |   Ortalama müşteri puanı     : 3.49 / 5.0
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   📦 KATEGORİ DAĞILIMI
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.home_garden    2 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.sports    2 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.beauty    1 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.clothing    1 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.unknown    1 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.electronics    1 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     |   productcategory.books    1 kayıt
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   🚨 AKSİYON GEREKTİREN KAYITLAR
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   Aksiyon gereken toplam     : 0
+2026-06-16 19:41:02 | analytics            | INFO     |   CRITICAL öncelikli         : 0
+2026-06-16 19:41:02 | analytics            | INFO     |   HIGH öncelikli             : 0
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   🔑 EN ÇOK KONUŞULAN KONULAR (Top 10)
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   shipping speed            bahsedilme:   5 | sentiment: ▲0.08
+2026-06-16 19:41:02 | analytics            | INFO     |   durability                bahsedilme:   5 | sentiment: ▲0.08
+2026-06-16 19:41:02 | analytics            | INFO     |   compatibility             bahsedilme:   4 | sentiment: ▲0.04
+2026-06-16 19:41:02 | analytics            | INFO     |   value for money           bahsedilme:   3 | sentiment: ▲0.17
+2026-06-16 19:41:02 | analytics            | INFO     |   ease of use               bahsedilme:   2 | sentiment: ▲0.08
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   🏁 RAKİP MARKA GEÇMELERİ
+2026-06-16 19:41:02 | analytics            | INFO     | ────────────────────────────────────────────────────────────
+2026-06-16 19:41:02 | analytics            | INFO     |   AlternativePro              2 yorum
+2026-06-16 19:41:02 | analytics            | INFO     | ════════════════════════════════════════════════════════════
+2026-06-16 19:41:02 | analytics            | INFO     | ━━━ Analitik Pipeline Tamamlandı ━━━ Temiz kayıt: 9 | KPI: sentiment=+0.087
+2026-06-16 19:41:02 | DataPipelineOrchestrator | INFO     | ✓ Katman 3 tamamlandı: 9 temiz kayıt | avg_sentiment=+0.087
+2026-06-16 19:41:02 | DataPipelineOrchestrator | INFO     | ▶ KATMAN 4/4: Raporlama Başlıyor... (formatlar=['json', 'csv', 'xlsx'])
+2026-06-16 19:41:02 | reporter             | INFO     | DataReporter başlatıldı: çıktı dizini=C:\Users\User\Desktop\ai_data_engine\reports | formatlar=['json', 'csv', 'xlsx']
+2026-06-16 19:41:02 | reporter             | INFO     | ━━━ Export Başlıyor ━━━ formatlar=['json', 'csv', 'xlsx'] | kayıt=9
+2026-06-16 19:41:02 | reporter             | INFO     | JSON export başlıyor: reports\reviews_analysis_20260616_164102.json
+2026-06-16 19:41:02 | reporter             | INFO     | ✓ JSON export tamamlandı: reviews_analysis_20260616_164102.json (11.3 KB, 9 kayıt)
+2026-06-16 19:41:02 | reporter             | INFO     | CSV export başlıyor: reports\reviews_analysis_20260616_164102.csv
+2026-06-16 19:41:02 | reporter             | INFO     | ✓ CSV export tamamlandı: reviews_analysis_20260616_164102.csv (4.3 KB, 9 satır)
+2026-06-16 19:41:02 | reporter             | INFO     | Excel export başlıyor: reports\reviews_analysis_20260616_164102.xlsx
+2026-06-16 19:41:02 | reporter             | INFO     | ✓ Excel export tamamlandı: reviews_analysis_20260616_164102.xlsx (10.6 KB, 9 satır, 3 sayfa)
+2026-06-16 19:41:02 | reporter             | INFO     | ━━━ Export Tamamlandı ━━━ başarılı=['json', 'csv', 'xlsx'] | başarısız=[]
+2026-06-16 19:41:02 | reporter             | INFO     | 📁 Üretilen dosyalar:
+2026-06-16 19:41:02 | reporter             | INFO     |    JSON  → reports\reviews_analysis_20260616_164102.json  (11.3 KB)
+2026-06-16 19:41:02 | reporter             | INFO     |    CSV   → reports\reviews_analysis_20260616_164102.csv  (4.3 KB)
+2026-06-16 19:41:02 | reporter             | INFO     |    XLSX  → reports\reviews_analysis_20260616_164102.xlsx  (10.6 KB)
+2026-06-16 19:41:02 | DataPipelineOrchestrator | INFO     | ✓ Katman 4 tamamlandı: 3 dosya üretildi.
+2026-06-16 19:41:02 | __main__             | INFO     | ============================================================
+2026-06-16 19:41:02 | __main__             | INFO     |   ✅ PIPELINE BAŞARIYLA TAMAMLANDI
+2026-06-16 19:41:02 | __main__             | INFO     |   Toplam süre     : 6.22s
+2026-06-16 19:41:02 | __main__             | INFO     |   Kazınan kayıt   : 10
+2026-06-16 19:41:02 | __main__             | INFO     |   Analiz edilen   : 10
+2026-06-16 19:41:02 | __main__             | INFO     |   Başarı oranı    : 100.0%
+2026-06-16 19:41:02 | __main__             | INFO     |   Üretilen dosya  : 3
+2026-06-16 19:41:02 | __main__             | INFO     | ============================================================
